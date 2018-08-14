@@ -5,9 +5,8 @@ go:
   - "1.10"
   - master
 install:
-  - go get github.com/jehiah/go-strftime
-  - go get github.com/ogier/pflag
-  - go build tlog.go
+  - go get -t .
+  - go build
   - go get github.com/golangci/golangci-lint/cmd/golangci-lint
 script:
   - golangci-lint run
